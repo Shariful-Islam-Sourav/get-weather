@@ -12,7 +12,7 @@ defaultCity();
 const searchCity = () => {
   const input = document.getElementById("input-value");
   const inputValue = input.value;
-  const url = `http://api.weatherapi.com/v1/current.json?key=090c938d753845dc99d192901210109&q=${inputValue}`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=090c938d753845dc99d192901210109&q=${inputValue}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => showDetails(data));
