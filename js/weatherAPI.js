@@ -2,7 +2,7 @@
 document.getElementById("error-message").style.display = "none";
 //Default
 const defaultCity = () => {
-  const url = `http://api.weatherapi.com/v1/current.json?key=090c938d753845dc99d192901210109&q=Dhaka`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=090c938d753845dc99d192901210109&q=Dhaka`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => showDetails(data));
